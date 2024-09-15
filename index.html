@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubiquitous Spoon</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling */
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { text-align: center; }
+        .section { margin-bottom: 20px; }
+        input, button { padding: 10px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ubiquitous Spoon</h1>
+
+        <div class="section" id="meal-planner">
+            <h2>Meal Planner</h2>
+            <input type="text" id="meal-input" placeholder="Add a meal">
+            <button onclick="addMeal()">Add Meal</button>
+            <ul id="meal-list"></ul>
+        </div>
+
+        <div class="section" id="ingredients">
+            <h2>Ingredient Based Recipe Suggestions</h2>
+            <input type="text" id="ingredient-input" placeholder="Enter ingredients">
+            <button onclick="suggestRecipes()">Suggest Recipes</button>
+            <ul id="recipe-list"></ul>
+        </div>
+
+        <div class="section" id="shopping-list">
+            <h2>Shopping List</h2>
+            <button onclick="generateShoppingList()">Generate Shopping List</button>
+            <ul id="shopping-list-items"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
